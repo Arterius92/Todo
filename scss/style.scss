@@ -1,17 +1,17 @@
 body {
     padding: 0;
     margin: 0;
-    background: lightgrey;
-    background-image: url('../img/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: lightgrey;
+    background-image: url('/img/background.png');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .container {
     width: 700px;
     margin: 20px auto;
-    background: white;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
@@ -43,7 +43,7 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            background: black;
+            background-color: black;
         }
         &::after {
             content: '';
@@ -52,7 +52,7 @@ body {
             position: absolute;
             bottom: 0;
             right: -140px;
-            background: black;
+            background-color: black;
         }
         span {
             color: #27496d;
@@ -131,15 +131,15 @@ body {
             a {
                 padding: 10px;
                 color: #fff;
-                background: #6496c8;
+                background-color: #6496c8;
                 text-shadow: -1px 1px #417cb8;
                 text-decoration: none;
                 &:hover {
-                    background: #346392;
+                    background-color: #346392;
                     text-shadow: -1px 1px #27496d;
                 }
                 &:active {
-                    background: #27496d;
+                    background-color: #27496d;
                     text-shadow: -1px 1px #193047;
                 }
             }
@@ -163,7 +163,7 @@ body {
     width: 700px;
     min-height: 200px;
     max-height: 700px;
-    background: rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
     overflow: auto;
     font-family: 'Pacifico', cursive;
     .todo-list {
@@ -219,7 +219,7 @@ body {
             }
         }
         .completed {
-            background: rgb(215, 251, 220);
+            background-color: rgb(215, 251, 220);
         }
         .editing {
             position: relative;
@@ -235,7 +235,7 @@ body {
                 padding-left: 10px;
                 font-size: 23px;
                 outline: none;
-                background: lightgray;
+                background-color: lightgray;
             }
         }
     }
