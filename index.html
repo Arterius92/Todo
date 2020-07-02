@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>JavaScript - To Do List</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.min.css"/>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <img src="img/logo.png" alt="">
-                <h1>Todo <span>L</span>ist</h1>
-            </div>
 
-            <div class="info">
-                <label class="check-all">
-                    <input type="checkbox" />
-                    <i class="far fa-square"></i>
-                </label>
-                <span class="count">Количество задач: <strong>0</strong></span>
-                <ul class="filters">
-                    <li>
-                        <a class="selected" href="#" id="all">Все</a>
-                    </li>
-                    <li>
-                        <a href="#" id="active">Активные</a>
-                    </li>
-                    <li>
-                        <a href="#" id="completed">Выполненные</a>
-                    </li>
-                </ul>
-                <span class="delete-complete">
-                    <i class="fas fa-dumpster"></i>
-                </span>
-            </div>
+<head>
+    <meta charset="UTF-8" />
+    <title>JavaScript - To Do List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
 
-            <div class="content">
-                <ul class="todo-list"></ul>
-            </div>
-
-            <div class="add-todo">
-                <label>
-                    <i class="fas fa-clipboard-list"></i>
-                    <input type="text" placeholder="Напишите новую задачу..." />
-                </label>
-            </div>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/logo.png" alt="">
+            <h1>Todo <span>L</span>ist</h1>
         </div>
-        <script src="js/main.js"></script>
-    </body>
+        <div class="info">
+            <label class="check-all">
+                <input type="checkbox" />
+                <i class="far fa-square"></i>
+            </label>
+            <span class="count">Количество задач: <strong>0</strong></span>
+            <ul class="filters">
+                <li>
+                    <a class="selected" href="#" id="all">Все</a>
+                </li>
+                <li>
+                    <a href="#" id="active">Активные</a>
+                </li>
+                <li>
+                    <a href="#" id="completed">Выполненные</a>
+                </li>
+            </ul>
+            <span class="delete-complete">
+                <i class="fas fa-dumpster"></i>
+            </span>
+        </div>
+        <div class="content">
+            <ul class="todo-list"></ul>
+        </div>
+        <div class="add-todo">
+            <label>
+                <i class="fas fa-clipboard-list"></i>
+                <input type="text" placeholder="Напишите новую задачу..." />
+            </label>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
